@@ -15,7 +15,7 @@ import { ProductService } from '../service/productservice';
         FormsModule, 
         ReactiveFormsModule, 
         CarouselModule, 
-        TagModule
+        TagModule,
     ],
     exports: [
         RouterOutlet, 
@@ -24,7 +24,7 @@ import { ProductService } from '../service/productservice';
         FormsModule, 
         ReactiveFormsModule, 
         CarouselModule, 
-        TagModule
+        TagModule,
     ],
     providers: [ProductService]
 })

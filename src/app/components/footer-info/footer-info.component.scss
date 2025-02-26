@@ -1,0 +1,637 @@
+.left-side-top {
+    display: flex;
+    width: 100%;
+    margin-right: 80px;
+}
+
+svg {
+    width: 14%;
+}
+
+.choose-info {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+    box-shadow: 1px 1px 5px gray;
+    max-height: 290px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #66676c18;
+}
+
+.types-item {
+    font-size: 14px;
+    transition: color 0.3s;
+    margin-bottom: 5px;
+}
+
+.types-box {
+    width: 100%;
+    border-right-style: solid;
+    border-right-color: #66676c44;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.types-box:nth-child(4) {
+    border-right-style: none !important;
+}
+
+.types-box:hover {
+    color: #007bff;
+}
+
+.big-button-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.all-sides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.vehicle-type {
+    padding-bottom: 20px;
+}
+
+.right-side-vehicle-type {}
+
+.small-button-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 271px;
+    gap: 5px;
+}
+
+.right-side-vehicle-type {
+    margin-left: 0px;
+}
+
+:host ::ng-deep {
+    .p-dropdown .p-dropdown-label.p-placeholder {
+        font-size: 14px;
+    }
+
+    .p-dropdown-panel .p-dropdown-items .p-dropdown-item:first-child {
+        font-size: 14px;
+    }
+
+    .left-side-top div.choose-info div.vehicle-type div.botton-side p-button.p-element button.p-ripple.p-element.p-button.p-component span.p-button-label {
+        width: 250px;
+    }
+
+    .button-side p-button.p-element {
+        flex: 1 1 150px;
+        max-width: 270px;
+        min-width: 100px;
+    }
+
+    .button-side p-button.p-element button.p-ripple {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.button-side {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.right-side-top {
+    width: 100%;
+}
+
+.left-side-vehicle-type {
+    margin-left: 20px;
+}
+
+.right-side-vehicle-type {
+    margin-right: 20px;
+}
+
+.both-side-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-side-mid-header-text {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.together-big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-big-photos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.a-couple-photos-big {
+    flex: 0 0 auto;
+    width: 375px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.a-couple-photos-big>img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.a-couple-photos-big img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.a-couple-photos-big p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rest-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rest-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.year,
+.distance,
+.fuel,
+.power,
+.capacity {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.together-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-small-photos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.a-couple-photos-small {
+    flex: 0 0 auto;
+    width: 245px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.a-couple-photos-small>img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.a-couple-photos-small img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.a-couple-photos-small p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rest-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rest-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.year,
+.distance,
+.fuel,
+.power,
+.capacity {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.together-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle {
+    margin-bottom: 20px;
+}
+
+.couple-adds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.big-add {
+    max-width: 450px;
+}
+
+.big-add > img {
+    max-width: 100%;
+}
+
+.bottom-category {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.category-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -19px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.category-items > a {
+    margin-right: 5px;
+    color: #66676C;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B82F6;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.separator > p {
+    margin: 20px 20px 20px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-middle {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-box {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.find-us {
+    margin-bottom: 30px;
+}
+
+.facebook,
+.instagram,
+.youtube,
+.tiktok {
+    font-size: 12px;
+}
+
+.second-box {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-company-item {
+    font-size: 12px;
+}
+
+.info-support-item > p {
+    font-size: 12px;
+}
+
+.third-box {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.olx,
+.otodom,
+.fixly {
+    font-size: 12px;
+}
+
+.info-services-item {
+    font-size: 12px;
+}
+
+.fourth-box {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-usefull-information {
+    font-size: 12px;
+}
+
+.owner {
+    margin-bottom: 70px;
+}
+
+.owner > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.both-logo {
+    display: grid;
+    gap: 10px;
+}
+
+.logo-lease > img {
+    width: 130px;
+}
+
+.logo-motopedia > img {
+    width: 130px;
+}
+
+.logo-lease {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-motopedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-google-play > img {
+    width: 140px;
+}
+
+.logo-appstore > img{
+    width: 140px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .right-side-top {
+        display: none;
+    }
+
+    .left-side-mid-header-text>h1 {
+        font-size: 18px;
+    }
+
+    .left-side-top {
+        margin-right: 0px;
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .choose-info {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .item {
+        margin-left: 15px;
+    }
+
+    .all-sides {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .big-button-vehicle,
+    .small-button-vehicle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .small-button-vehicle>.card.flex.justify-content-center {
+        max-width: 135.5px;
+    }
+
+
+    :host ::ng-deep {
+        .button-side p-button.p-element button.p-ripple {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 994px) {
+    .item {
+        font-size: 75%;
+    }
+
+    .couple-adds {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 925px) {
+    .items>a:nth-child(5)>div:nth-child(1) {
+        display: block;
+    }
+
+    .items>a:nth-child(6) {
+        display: none;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: flex-start;
+        margin-left: 50px;
+    }
+
+    .item {
+        margin-left: 0;
+        font-size: 75%;
+    }
+
+    .types-item {
+        font-size: 14px;
+    }
+
+    :host ::ng-deep {
+        .item>p-button button {
+            width: 100%;
+            font-size: 70%;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .item {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .choose-info {
+        margin-left: 5px;
+        margin-right: 5px;
+        max-height: none;
+    }
+
+    .left-side-top {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .small-button-vehicle {
+        display: grid;
+        gap: 15px;
+    }
+
+    .small-button-vehicle>.card.flex.justify-content-center {
+        max-width: 203px;
+        max-width: none;
+    }
+
+    .types-item {
+        font-size: 14px;
+    }
+
+    .footer-middle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    
+      .first-box,
+      .second-box,
+      .third-box,
+      .fourth-box {
+        flex: none;
+        width: 100%;
+      }
+}

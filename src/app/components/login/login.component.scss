@@ -1,0 +1,19 @@
+.main {
+}
+
+.bold-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: grid;
+  justify-content: center; // tu mu odwala i nie dziala szerokosc
+}
+
+:host ::ng-deep {
+  .flex.flex-column.gap-2 {
+    display: grid;
+    max-width: 400px;
+  }
+}

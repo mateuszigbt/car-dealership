@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section {
+    background-color: #F7F8FA;
+    width: 30%;
+    height: 100vh;
+}
+
+.image > img {
+    width: 400px;
+}
+
+.bold-text {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+ul {
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+li {
+    margin-top: 20px;
+}
