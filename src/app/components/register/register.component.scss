@@ -1,0 +1,111 @@
+.main {
+  text-align: center;
+}
+
+.bold-text {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #ebecef;
+}
+
+.bottom-rest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.password-checker {
+    display: inline-grid;
+    //margin-left: -190px;
+    margin-right: 190px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: -10px;
+    text-align: left;
+}
+
+li {
+    min-width: 150px;
+}
+
+.second-small-desc {
+  color: #66676c;
+  max-width: 500px;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+b {
+  color: #0071ce;
+}
+
+form > label {
+    font-size: 12px;
+    color: #66676c;
+}
+
+form {
+    width: 310px;
+    text-align: start;
+}
+
+.checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:host ::ng-deep {
+  .p-element.p-button-primary.p-button.p-component {
+    width: 100%;
+    margin-top: 15px;
+    max-width: 350px;
+    height: 50px;
+    font-size: 19px;
+  }
+
+  form > .p-element.ng-untouched.ng-pristine.ng-valid {
+    margin-right: 3px;
+    margin-bottom: -4px;
+  }
+
+  form > .p-element.ng-valid.ng-dirty.ng-touched {
+    margin-right: 3px;
+    margin-bottom: -4px;
+  }
+}

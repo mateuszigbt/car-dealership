@@ -1,1 +1,69 @@
-<p>register works!</p>
+<div class="main">
+  <div class="bold-text">Zarejestruj się aby kontynuować</div>
+
+  <div class="input-group">
+    <div class="input-wrapper">
+      <label for="username">E-mail</label>
+      <input
+        pInputText
+        id="username"
+        aria-describedby="username-help"
+        [(ngModel)]="value"
+      />
+      <small id="username-help">Wpisz swój E-mail.</small>
+    </div>
+
+    <div class="input-wrapper">
+      <label for="password">Hasło</label>
+      <input
+        pInputText
+        id="password"
+        aria-describedby="password-help"
+        [(ngModel)]="value"
+      />
+      <small id="password-help">Wpisz swoje hasło.</small>
+    </div>
+  </div>
+
+  <div class="password-checker">
+    <p>Twoje hasło musi mieć:</p>
+    <ul>
+      <li>9 lub więcej znaków</li>
+      <li>Wielką literę</li>
+      <li>Małą literę</li>
+      <li>Co najmniej jedną cyfrę</li>
+    </ul>
+  </div>
+
+  <div class="checkbox">
+    <form class="flex align-items-center gap-1" [formGroup]="formGroup">
+      <p-checkbox formControlName="city" value="New York" inputId="ny" />
+      <label for="ny"
+        >Klikając w pole, potwierdzam, że zapoznałem/am się z
+        <b>Regulaminem</b> i akceptuję jego treść oraz &nbsp;przyjmuję do
+        wiadomości, że Grupa lorem-ipsum Sp. z o.o. będzie przetwarzać moje dane
+        osobowe zgodnie z Polityką prywatności oraz Polityką dotyczącą plików
+        cookie i podobnych technologii, z którymi się zapoznałem/am.</label
+      >
+    </form>
+  </div>
+  <div class="bottom-rest">
+    <button
+      pButton
+      pRipple
+      label="Utwórz konto"
+      class="p-button-primary"
+    ></button>
+
+    <div class="second-small-desc">
+      Administratorem Twoich danych osobowych jest lorem-ipsum Sp. z o.o. z
+      siedzibą w Poznaniu. Twoje dane będą przetwarzane w szczególności w celu
+      wykonania zawartej z Tobą umowy oraz jeśli wyraziłeś zgodę na otrzymywanie
+      informacji handlowych i marketingowych - w celu dostarczania Ci informacji
+      na temat aktualnych promocji, ofert specjalnych i usług poprzez wybrane
+      kanały komunikacyjne. Więcej informacji o przetwarzaniu Twoich danych
+      osobowych, w tym o innych celach ich przetwarzania oraz o szczegółach
+      związanych z realizacją przysługujących Ci praw, znajdziesz w naszej głównej zakładce.
+    </div>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 <div class="main">
   <div class="bold-text">Zaloguj się aby kontynuować</div>
+
   <div class="input-group">
-    <div class="flex flex-column gap-2">
+    <div class="input-wrapper">
       <label for="username">E-mail</label>
       <input
         pInputText
@@ -9,17 +10,38 @@
         aria-describedby="username-help"
         [(ngModel)]="value"
       />
-      <small id="username-help"> Wpisz swój E-mail. </small>
+      <small id="username-help">Wpisz swój E-mail.</small>
     </div>
-    <div class="flex flex-column gap-2">
-        <label for="username">Hasło</label>
-        <input
-          pInputText
-          id="username"
-          aria-describedby="username-help"
-          [(ngModel)]="value"
-        />
-        <small id="username-help"> Wpisz swoje hasło.. </small>
-      </div>
+
+    <div class="input-wrapper">
+      <label for="password">Hasło</label>
+      <input
+        pInputText
+        id="password"
+        aria-describedby="password-help"
+        [(ngModel)]="value"
+      />
+      <small id="password-help">Wpisz swoje hasło.</small>
+    </div>
+  </div>
+  <div class="bottom-rest">
+    <div class="forgot-password">Zapomniałem hasło.</div>
+    <button
+      pButton
+      pRipple
+      label="Zaloguj się"
+      class="p-button-primary"
+    ></button>
+    <div class="first-small-desc">
+      Logując się, akceptujesz <b>regulamin serwisu</b> loremipsum.pl w jego
+      aktualnym brzmieniu.
+    </div>
+
+    <div class="second-small-desc">
+      Zalogowanie oznacza akceptację Regulaminu serwisu loremipsum w aktualnym
+      brzmieniu. Jeśli nie akceptujesz warunków zmienionego Regulaminu serwisu
+      loremipsum, wyślij oświadczenie o rozwiązaniu Umowy w trybie przewidzianym w
+      Regulaminie.
+    </div>
   </div>
 </div>
