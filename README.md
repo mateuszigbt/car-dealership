@@ -1,3 +1,10 @@
+Copyright (c) 2025 [Your Name]
+
+All rights reserved.
+
+The source code in this repository is provided solely for viewing and demonstration purposes.  
+Copying, cloning, modifying, publishing, or using this code, in whole or in part, without the explicit written permission of the author is strictly prohibited.
+
 # CarDealership
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
