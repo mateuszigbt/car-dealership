@@ -5,6 +5,8 @@ All rights reserved.
 The source code in this repository is provided solely for viewing and demonstration purposes.  
 Copying, cloning, modifying, publishing, or using this code, in whole or in part, without the explicit written permission of the author is strictly prohibited.
 
+An application based on a popular car site. The images that were used in the project will not be used in the final phase and are temporary.
+
 # CarDealership
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
