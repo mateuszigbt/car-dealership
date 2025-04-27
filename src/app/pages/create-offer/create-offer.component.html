@@ -1,0 +1,350 @@
+<div class="main">
+  <section class="left-side">
+    <div class="title-type">
+      <div class="title">Stwórz ogłoszenie</div>
+      <div class="type">
+        <p-dropdown
+          [options]="cities"
+          [(ngModel)]="selectedCity"
+          optionLabel="name"
+          placeholder="Select a City"
+        />
+      </div>
+    </div>
+    <div class="info-vehicle">
+      <div class="title-vehicle">Dane pojazdu</div>
+      <div class="characteristics">
+        <div class="title-characteristics">Cechy główne</div>
+        <div class="container-characteristics">
+          <div class="first-characteristics">
+            <div class="title-damaged">Uszkodzony</div>
+            <div class="group-radio">
+              <div class="flex align-items-center">
+                <p-radioButton
+                  name="TAK"
+                  value="TAK"
+                  [(ngModel)]="ingredient"
+                  inputId="ingredient1"
+                />
+                <label for="ingredient1" class="ml-2"> TAK </label>
+              </div>
+
+              <div class="flex align-items-center">
+                <p-radioButton
+                  name="NIE"
+                  value="NIE"
+                  [(ngModel)]="ingredient"
+                  inputId="ingredient2"
+                />
+                <label for="ingredient2" class="ml-2"> NIE </label>
+              </div>
+            </div>
+          </div>
+          <div class="second-characteristics">
+            <div class="title-import">Importowany</div>
+            <div class="group-radio">
+              <div class="flex align-items-center">
+                <p-radioButton
+                  name="TAK"
+                  value="TAK"
+                  [(ngModel)]="ingredient"
+                  inputId="ingredient1"
+                />
+                <label for="ingredient1" class="ml-2"> TAK </label>
+              </div>
+
+              <div class="flex align-items-center">
+                <p-radioButton
+                  name="NIE"
+                  value="NIE"
+                  [(ngModel)]="ingredient"
+                  inputId="ingredient2"
+                />
+                <label for="ingredient2" class="ml-2"> NIE </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="basic-info">
+      <div class="title-basic">Informacje podstawowe</div>
+      <div class="container-top-group-input">
+        <div class="group-input">
+          <div class="small-desc">VIN</div>
+          <p-floatLabel class="float-label-right">
+            <input pInputText id="username" [(ngModel)]="value" />
+            <label for="username">17 znaków VIN</label>
+          </p-floatLabel>
+        </div>
+        <div class="group-input">
+          <div class="small-desc">Przebieg</div>
+          <p-floatLabel class="float-label-right">
+            <input pInputText id="username" [(ngModel)]="value" />
+            <label for="username">np. 100000 km</label>
+          </p-floatLabel>
+        </div>
+      </div>
+      <div class="container-top-group-input">
+        <div class="group-input">
+          <div class="small-desc">Nr. rejestracyjny pojazdu</div>
+          <p-floatLabel class="float-label-right">
+            <input pInputText id="username" [(ngModel)]="value" />
+            <label for="username">np. WSK12345</label>
+          </p-floatLabel>
+        </div>
+        <div class="group-input">
+          <div class="small-desc">Data pierwszej rejestracji</div>
+          <p-floatLabel class="float-label-right">
+            <input pInputText id="username" [(ngModel)]="value" />
+            <label for="username">np. 10.10.1998</label>
+          </p-floatLabel>
+        </div>
+      </div>
+    </div>
+
+    <div class="technical-data-title">Dane techniczne</div>
+    <div class="technical-data">
+      <div class="left-group-input">
+        <div class="small-desc">Rok produkcji</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 2025</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Model pojazdu</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. Seria 3</label>
+        </p-floatLabel>
+
+        <div class="small-desc">MOC</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 300 KM</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Liczba drzwi</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 3</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Wersja</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 330i</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Typ nadwozia</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. Coupe</label>
+        </p-floatLabel>
+      </div>
+
+      <div class="right-group-input">
+        <div class="small-desc">Marka pojazdu</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. BMW</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Rodzaj paliwa</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. Benzyna</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Pojemność skokowa</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 2999 cm3</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Skrzynia biegów</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. Automatyczna</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Generacja</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. E46</label>
+        </p-floatLabel>
+
+        <div class="small-desc">Kolor</div>
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">Srebny</label>
+        </p-floatLabel>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="title-photo">Zdjęcia</div>
+      <div class="uploader-photos">
+        <p-toast />
+        <p-fileUpload
+          name="myfile[]"
+          url="https://www.primefaces.org/cdn/api/upload.php"
+          [multiple]="true"
+          accept="image/*"
+          maxFileSize="1000000"
+          (onUpload)="onTemplatedUpload()"
+          (onSelect)="onSelectedFiles($event)"
+        >
+          <ng-template
+            pTemplate="header"
+            let-files
+            let-chooseCallback="chooseCallback"
+            let-clearCallback="clearCallback"
+            let-uploadCallback="uploadCallback"
+          >
+            <div
+              class="flex flex-wrap justify-content-between align-items-center flex-1 gap-2"
+            >
+              <div class="flex gap-2">
+                <p-button
+                  (onClick)="choose($event, chooseCallback)"
+                  icon="pi pi-images"
+                  [rounded]="true"
+                  [outlined]="true"
+                />
+                <p-button
+                  (onClick)="uploadEvent(uploadCallback)"
+                  icon="pi pi-cloud-upload"
+                  [rounded]="true"
+                  [outlined]="true"
+                  severity="success"
+                  [disabled]="!files || files.length === 0"
+                />
+                <p-button
+                  (onClick)="clearCallback()"
+                  icon="pi pi-times"
+                  [rounded]="true"
+                  [outlined]="true"
+                  severity="danger"
+                  [disabled]="!files || files.length === 0"
+                />
+              </div>
+              <p-progressBar
+                [value]="totalSizePercent"
+                [showValue]="false"
+                styleClass="md:w-20rem h-1rem w-full md:ml-auto"
+                [ngClass]="{ 'exceeded-progress-bar': totalSizePercent > 100 }"
+              >
+                <span class="white-space-nowrap">{{ totalSize }}B / 1Mb</span>
+              </p-progressBar>
+            </div>
+          </ng-template>
+          <ng-template
+            pTemplate="content"
+            let-files
+            let-uploadedFiles="uploadedFiles"
+            let-removeFileCallback="removeFileCallback"
+            let-removeUploadedFileCallback="removeUploadedFileCallback"
+          >
+            <div *ngIf="files?.length > 0">
+              <h5>Pending</h5>
+              <div class="flex flex-wrap p-0 sm:p-5 gap-5">
+                <div
+                  *ngFor="let file of files; let i = index"
+                  class="card m-0 px-6 flex flex-column border-1 surface-border align-items-center gap-3"
+                >
+                  <div>
+                    <img
+                      role="presentation"
+                      [alt]="file.name"
+                      [src]="file.objectURL"
+                      width="100"
+                      height="50"
+                    />
+                  </div>
+                  <span class="font-semibold">{{ file.name }}</span>
+                  <div>{{ formatSize(file.size) }}</div>
+                  <p-badge value="Pending" severity="warning" />
+                  <div *ngFor="let file of files; let i = index">
+                    <p-button
+                      icon="pi pi-times"
+                      (onClick)="removeUploadedFileCallback(i)"
+                      [outlined]="true"
+                      [rounded]="true"
+                      severity="danger"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="uploadedFiles?.length > 0">
+              <h5>Completed</h5>
+              <div class="flex flex-wrap p-0 sm:p-5 gap-5">
+                <div
+                  *ngFor="let file of uploadedFiles; let i = index"
+                  class="card m-0 px-6 flex flex-column border-1 surface-border align-items-center gap-3"
+                >
+                  <div>
+                    <img
+                      role="presentation"
+                      [alt]="file.name"
+                      [src]="file.objectURL"
+                      width="100"
+                      height="50"
+                    />
+                  </div>
+                  <span class="font-semibold">{{ file.name }}</span>
+                  <div>{{ formatSize(file.size) }}</div>
+                  <p-badge value="Completed" class="mt-3" severity="success" />
+                  <div *ngFor="let file of files; let i = index">
+                    <p-button
+                      icon="pi pi-times"
+                      (onClick)="removeUploadedFileCallback(i)"
+                      [outlined]="true"
+                      [rounded]="true"
+                      severity="danger"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="file"> </ng-template>
+          <ng-template pTemplate="empty">
+            <div
+              class="flex align-items-center justify-content-center flex-column"
+            >
+              <i
+                class="pi pi-cloud-upload border-2 border-circle p-5 text-8xl text-400 border-400"
+              ></i>
+              <p class="mt-4 mb-0">Drag and drop files here to upload.</p>
+            </div>
+          </ng-template>
+        </p-fileUpload>
+      </div>
+    </div>
+    <div class="vehicle-desc">
+      <div class="title-vehicle-desc">Opis pojazdu</div>
+      <div class="small-desc">Tytuł ogłoszenia</div>
+      <p-floatLabel class="float-label-right">
+        <input pInputText id="username" [(ngModel)]="value" />
+        <label for="username"
+          >np. pierwszy właściciel, stan idealny</label
+        >
+      </p-floatLabel>
+      <div class="small-desc">Opis</div>
+      <textarea id="float-input" rows="5" cols="30" pInputTextarea> </textarea>
+    </div>
+    <div class="price">
+      <div class="title-price">Cena</div>
+      <div class="small-desc">Cena</div>
+      <div class="price-button">
+        <p-floatLabel class="float-label-right">
+          <input pInputText id="username" [(ngModel)]="value" />
+          <label for="username">np. 12000 PLN</label>
+        </p-floatLabel>
+        <p-button label="Dodaj ogłoszenie" severity="danger" />
+      </div>
+    </div>
+  </section>
+</div>

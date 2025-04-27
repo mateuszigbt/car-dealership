@@ -194,4 +194,17 @@ header {
     flex: none;
     width: 100%;
   }
+
+  .item {
+    font-size: 15px;
+  }
+  :host ::ng-deep {
+    .item > p-button button {
+      width: 162px;
+      height: 40px;
+      font-size: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
 }
